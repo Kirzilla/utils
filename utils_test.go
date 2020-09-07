@@ -17,8 +17,8 @@ func TestContains(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := Contains(tt.args.a, tt.args.x); got != tt.want {
-				t.Errorf("Contains() = %v, want %v", got, tt.want)
+			if got := InSlice(tt.args.a, tt.args.x); got != tt.want {
+				t.Errorf("InSlice() = %v, want %v", got, tt.want)
 			}
 		})
 	}
