@@ -1,3 +1,3 @@
-module github.com/kirzilla/utils/v2
+module github.com/kirzilla/utils/v3
 
 go 1.14
