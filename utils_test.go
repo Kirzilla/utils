@@ -39,8 +39,8 @@ func TestContainsInt(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := ContainsInt(tt.args.a, tt.args.x); got != tt.want {
-				t.Errorf("ContainsInt() = %v, want %v", got, tt.want)
+			if got := InSliceInt(tt.args.a, tt.args.x); got != tt.want {
+				t.Errorf("InSliceInt() = %v, want %v", got, tt.want)
 			}
 		})
 	}
